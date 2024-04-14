@@ -91,10 +91,12 @@ public class MainActivity extends AppCompatActivity {
                 } else if (woodSpecies.equals("Melina")) {
                     Intent intent = new Intent(MainActivity.this, Melina.class);
                     intent.putExtra("woodSpecies", woodSpecies);
+                    intent.putExtra("woodImagePath", tempImagePath);
                     startActivity(intent);
-                } else if (woodSpecies.equals("Narra")) {
-                    Intent intent = new Intent(MainActivity.this, Narra.class);
+                } else if (woodSpecies.equals("Mahogany")) {
+                    Intent intent = new Intent(MainActivity.this, Mahogany.class);
                     intent.putExtra("woodSpecies", woodSpecies);
+                    intent.putExtra("woodImagePath", tempImagePath);
                     startActivity(intent);
                 } else {
                     // Show toast message for unclassified wood species

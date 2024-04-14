@@ -19,6 +19,9 @@
         android:theme="@style/Theme.WoodMaster"
         tools:targetApi="31">
         <activity
+            android:name=".Mahogany"
+            android:exported="false" />
+        <activity
             android:name=".Melina"
             android:exported="false" />
         <activity
