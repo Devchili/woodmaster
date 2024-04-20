@@ -18,7 +18,7 @@ public class Mahogany extends AppCompatActivity {
         setContentView(R.layout.activity_mahogany);
 
         imageView = findViewById(R.id.akasyaImageView);
-        woodSpeciesTextView = findViewById(R.id.akasyaWoodSpeciesTextView);
+        woodSpeciesTextView = findViewById(R.id.MahoganyWoodSpeciesTextView);
 
         // Retrieve wood species and image file path from intent extras
         String woodSpecies = getIntent().getStringExtra("woodSpecies");

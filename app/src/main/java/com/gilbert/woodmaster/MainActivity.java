@@ -83,24 +83,42 @@ public class MainActivity extends AppCompatActivity {
                 String woodSpecies = result.getText().toString();
                 Bitmap woodImage = ((BitmapDrawable) imageView.getDrawable()).getBitmap();
 
-                if (woodSpecies.equals("Akasya")) {
-                    Intent intent = new Intent(MainActivity.this, Akasya.class);
-                    intent.putExtra("woodSpecies", woodSpecies);
-                    intent.putExtra("woodImagePath", tempImagePath); // Pass the image file path
-                    startActivity(intent);
-                } else if (woodSpecies.equals("Melina")) {
-                    Intent intent = new Intent(MainActivity.this, Melina.class);
-                    intent.putExtra("woodSpecies", woodSpecies);
-                    intent.putExtra("woodImagePath", tempImagePath);
-                    startActivity(intent);
-                } else if (woodSpecies.equals("Mahogany")) {
-                    Intent intent = new Intent(MainActivity.this, Mahogany.class);
-                    intent.putExtra("woodSpecies", woodSpecies);
-                    intent.putExtra("woodImagePath", tempImagePath);
-                    startActivity(intent);
-                } else {
-                    // Show toast message for unclassified wood species
-                    Toast.makeText(MainActivity.this, "No information available", Toast.LENGTH_SHORT).show();
+                switch (woodSpecies) {
+                    case "Akasya": {
+                        Intent intent = new Intent(MainActivity.this, Akasya.class);
+                        intent.putExtra("woodSpecies", woodSpecies);
+                        intent.putExtra("woodImagePath", tempImagePath); // Pass the image file path
+
+                        startActivity(intent);
+                        break;
+                    }
+                    case "Melina": {
+                        Intent intent = new Intent(MainActivity.this, Melina.class);
+                        intent.putExtra("woodSpecies", woodSpecies);
+                        intent.putExtra("woodImagePath", tempImagePath);
+                        startActivity(intent);
+                        break;
+                    }
+                    case "Mahogany": {
+                        Intent intent = new Intent(MainActivity.this, Mahogany.class);
+                        intent.putExtra("woodSpecies", woodSpecies);
+                        intent.putExtra("woodImagePath", tempImagePath);
+                        startActivity(intent);
+
+                        break;
+                    }
+                    case "Mango": {
+                        Intent intent = new Intent(MainActivity.this, Mango.class);
+                        intent.putExtra("woodSpecies", woodSpecies);
+                        intent.putExtra("woodImagePath", tempImagePath);
+                        startActivity(intent);
+
+                        break;
+                    }
+                    default:
+                        // Show toast message for unclassified wood species
+                        Toast.makeText(MainActivity.this, "No information available", Toast.LENGTH_SHORT).show();
+                        break;
                 }
             }
         });
@@ -167,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
                     maxPos = i;
                 }
             }
-            String[] classes = {"Akasya", "Mahogany", "Melina", "Unclassified"};
+            String[] classes = {"Akasya", "Mahogany", "Melina", "Unclassified", "Mango"};
             result.setText(classes[maxPos]);
 
             String s = "";

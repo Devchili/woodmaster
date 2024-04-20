@@ -19,19 +19,15 @@
         android:theme="@style/Theme.WoodMaster"
         tools:targetApi="31">
         <activity
-            android:name=".Mahogany"
+            android:name=".Mango"
             android:exported="false" />
         <activity
             android:name=".Melina"
             android:exported="false" />
+        <activity android:name=".Mahogany"
+            android:exported="false"/>
         <activity
             android:name=".Akasya"
-            android:exported="false" />
-        <activity
-            android:name=".Narra"
-            android:exported="false" />
-        <activity
-            android:name=".SecondActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

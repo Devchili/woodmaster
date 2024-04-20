@@ -8,17 +8,17 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class Melina extends AppCompatActivity {
+public class Mango extends AppCompatActivity {
     ImageView imageView;
     TextView woodSpeciesTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_melina);
+        setContentView(R.layout.activity_mango);
 
-        imageView = findViewById(R.id.melinaImageView);
-        woodSpeciesTextView = findViewById(R.id.melinaWoodSpeciesTextView);
+        imageView = findViewById(R.id.mangoImageView);
+        woodSpeciesTextView = findViewById(R.id.mangoWoodSpeciesTextView);
 
         // Retrieve wood species and image file path from intent extras
         String woodSpecies = getIntent().getStringExtra("woodSpecies");

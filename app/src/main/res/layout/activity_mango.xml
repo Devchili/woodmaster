@@ -6,14 +6,14 @@
     android:padding="16dp">
 
     <TextView
-        android:layout_width="300dp"
+        android:layout_width="231dp"
         android:layout_height="49dp"
-        android:layout_below="@id/mahoganyImageView"
+        android:layout_below="@id/mangoImageView"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="114dp"
-        android:layout_marginEnd="135dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="118dp"
         android:text="Recommendations"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -42,7 +42,7 @@
         android:src="@drawable/cabinet" />
 
     <ImageView
-        android:id="@+id/mahoganyImageView"
+        android:id="@+id/mangoImageView"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginEnd="9dp"
@@ -55,7 +55,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="199dp"
-        android:layout_height="210dp"
+        android:layout_height="240dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="30dp"
@@ -94,12 +94,14 @@
 
         <TextView
             android:layout_width="174dp"
-            android:layout_height="150dp"
+            android:layout_height="190dp"
             android:layout_marginLeft="10sp"
             android:layout_marginTop="52dp"
             android:layout_marginRight="10sp"
             android:justificationMode="inter_word"
-            android:text="Mahogany is a straight-grained, reddish-brown timber of three tropical hardwood species of the genus Swietenia, indigenous to the Americas and part of the pantropical chinaberry family, Meliaceae. Mahogany is used commercially for a wide variety of goods, due to its coloring and durable nature."
+            android:text="Mango wood is categorized as hardwood because of its strength, density, attractive looks, and durability that allows it not to wear out quickly and keep its high luster texture for many years. These capabilities have made it suitable for producing various household objects, ranging from doors and flooring to beds, tables, drawers and other furniture.
+
+"
             android:textSize="12sp">
 
         </TextView>
@@ -107,14 +109,14 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/MahoganyWoodSpeciesTextView"
+        android:id="@+id/mangoWoodSpeciesTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/mahoganyImageView"
+        android:layout_below="@id/mangoImageView"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="-170dp"
         android:layout_marginEnd="50dp"
-        android:text="Mahogany"
+        android:text="Mango"
         android:textSize="24sp"
         android:textStyle="bold" />
 
